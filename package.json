@@ -1,11 +1,14 @@
 {
-  "name": "ip",
+  "name": "@assetval/ip",
   "version": "1.1.5",
   "author": "Antonio Bourassa",
   "homepage": "https://github.com/AssetVal/node-ip",
   "repository": {
     "type": "git",
     "url": "http://github.com/AssetVal/node-ip.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "lib/ip",
   "devDependencies": {
