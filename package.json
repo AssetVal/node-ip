@@ -7,8 +7,14 @@
     "type": "git",
     "url": "http://github.com/AssetVal/node-ip.git"
   },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint lib/*.ts test/*.js",
+    "test": "npm run lint && mocha --reporter spec test/*-test.js",
+    "fix": "npm run lint -- --fix"
   },
   "publishConfig": {
     "access": "public"

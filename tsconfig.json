@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "module": "CommonJS",
+    "lib": ["ES2022"],
+    "skipLibCheck": true,
+    "alwaysStrict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "preserveConstEnums": true,
+    "inlineSourceMap": true,
+    /* Linting */
+    "strict": true,
+    "strictNullChecks": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": true
+  },
+  "include": ["./lib/**.ts"],
+  "exclude": ["./node_modules", "*.d.ts", "~/.vscode/**"]
+}
