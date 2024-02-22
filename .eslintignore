@@ -1,0 +1,50 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# data definition files
+**/*.d.ts
+
+# map files
+**/*.map.js
+
+# Only lint ts files
+**/*.js
+**/*.js.map
+**/*.mjs;
+**/*.mjs.map
+
+# don't ever lint node_modules
+/node_modules
+node_modules
+./node_modules
+
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+
+# don't lint the config files
+.eslintignore
+.eslintrc.cjs
+.stylelintrc
+.travis.yml
+cypress.json
+ecosystem.config.js
+
+# don't lint the changelog
+CHANGELOG.md
+
+# don't lint nyc coverage output
+coverage
+docs
+.github
+.vscode
+./logs
+.nyc
+coverage
+.nyc_output
+./cypress
+/cypress
+cypress
+**/playwright.yml
