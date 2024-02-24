@@ -1,6 +1,6 @@
 {
   "name": "@assetval/ip",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "author": "Antonio Bourassa",
   "homepage": "https://github.com/AssetVal/node-ip",
   "repository": {
@@ -12,20 +12,23 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "eslint lib/*.ts test/*.js",
-    "test": "npm run lint && mocha --reporter spec test/*-test.js",
-    "fix": "npm run lint -- --fix"
+    "build": "tsc --project tsconfig.json",
+    "watch": "tsc --project tsconfig.json --watch",
+    "test": "vitest test/*.ts"
   },
   "publishConfig": {
     "access": "public"
   },
   "main": "lib/ip",
   "devDependencies": {
-    "@eslint/eslintrc": "^3.0.1",
+    "@eslint/eslintrc": "^3.0.2",
     "@getify/eslint-plugin-proper-ternary": "^3.1.1",
+    "@types/eslint": "^8",
+    "@types/node": "^20.11.20",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
+    "@vitest/coverage-v8": "^1.3.1",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
@@ -34,8 +37,8 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-security": "^2.1.1",
     "jsonc-eslint-parser": "^2.4.0",
-    "mocha": "~1.3.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
   },
   "license": "MIT",
   "packageManager": "yarn@4.1.0"
